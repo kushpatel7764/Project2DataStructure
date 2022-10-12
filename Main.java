@@ -15,6 +15,23 @@ public class Main {
         String[] descriptionsArray = readDescriptions();
 
         //TODO: Steps 2+3 here go here.
+         while (timer < timeLimit){
+            String description = descriptionsArray[rand.nextInt(50) + 1];
+            int weight = rand.nextInt(100) + 1;
+            String shippingType = chanceArray[rand.nextInt(50) + 1];
+            Package newPackage = new Package(description, weight, null);
+            switch (shippingType) {
+                case "economy":
+                    
+                    break;
+            
+                case "priority":
+                break; 
+                case "overnight":
+                break;
+            }
+            ++timer; 
+        }
 
     }
 
