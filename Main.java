@@ -15,6 +15,12 @@ public class Main {
         String[] descriptionsArray = readDescriptions();
 
         //TODO: Steps 2+3 here go here.
+        PackageQueue economyShipping = new PackageQueue();
+        PackageQueue priorityShipping = new PackageQueue();
+        PackageQueue overnightShipping = new PackageQueue(); 
+        Random rand = new Random(); 
+        int timer = 0; 
+        int timeLimit = 100; 
          while (timer < timeLimit){
             String description = descriptionsArray[rand.nextInt(50) + 1];
             int weight = rand.nextInt(100) + 1;
